@@ -1,6 +1,6 @@
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { Module } from "@nestjs/common";
-import { Tarefa } from "../entidades/tarefa.entidade";
+import { Tarefa } from "../entities/tarefa.entities";
 import { TarefaService } from "../service/tarefa.service";
 import { TarefaController } from "../controllers/tarefa.controller";
 
