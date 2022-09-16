@@ -9,7 +9,7 @@ import { TarefaModule } from './tarefa/modules/tarefa.module';
 @Module({
   imports: [TypeOrmModule.forRoot({
 
-    type: 'postgres',
+    /*type: 'postgres',
     host: process.env.DATABASE_URL,
     logging: false,
     dropSchema: false,
@@ -17,16 +17,16 @@ import { TarefaModule } from './tarefa/modules/tarefa.module';
       rejectUnauthorized: false
     },
     autoLoadEntities: true,
-    synchronize: true
+    synchronize: true*/
 
-    /*type: 'mysql',
+    type: 'mysql',
     host: 'localhost',
     port: 3306,
     username: 'root',
     password: 'root',
     database: 'db_todo',
     entities: [Tarefa, Categoria],
-    synchronize: true*/
+    synchronize: true
   }),
     TarefaModule,
     CategoriaModule
