@@ -16,8 +16,8 @@ export class Categoria {
     @Column({ nullable: false, length: 255 })
     descricao: string
 
-    @ApiProperty({type: () => Categoria})
     @OneToMany(() => Tarefa, (tarefa) => tarefa.categoria)
+    @ApiProperty({type: () => Tarefa})
     tarefas: Tarefa[]
 
 }

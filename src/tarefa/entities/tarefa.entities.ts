@@ -36,9 +36,9 @@ export class Tarefa {
     @Column()
     status: boolean
 
-    @ApiProperty({type: () => Tarefa})
     @ManyToOne(() => Categoria, (categoria) => categoria.tarefas, {
         onDelete: "CASCADE"
     })
+    @ApiProperty({type: () => Categoria})
     categoria: Categoria
 }

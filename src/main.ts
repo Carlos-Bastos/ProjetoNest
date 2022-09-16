@@ -11,8 +11,8 @@ async function bootstrap() {
     .setTitle('To-Do List')
     .setDescription('Projeto simulando lista de tarefas em Nest.js com TypeORM')
     .setContact('To-Do List',
-    'https://github.com/Carlos-Bastos',
-    'carlos.rbastoss@gmail.com')
+      'https://github.com/Carlos-Bastos',
+      'carlos.rbastoss@gmail.com')
 
     .setVersion('v1.0.0')
     .build()
@@ -23,4 +23,4 @@ async function bootstrap() {
   app.enableCors()
   await app.listen(process.env.PORT || 3000);
 }
-bootstrap();
+bootstrap()
